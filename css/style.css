@@ -152,11 +152,27 @@ footer {
     background-color: #044c8c;
 }
 footer .zocalo {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: 
+    "img1 img2 img3";
     justify-content: space-around;
+    align-items: center;
     padding-top: 15px;
     padding-bottom: 90px;
+}
+
+footer .zocalo .img1 {
+    grid-area: img1;
+}
+
+footer .zocalo .img2 {
+    grid-area: img2;
+}
+
+footer .zocalo .img3 {
+    grid-area: img3;
 }
 
 footer .ayudas {
@@ -211,7 +227,7 @@ footer .ubicaciones {
 
 /* Mediaqueries */
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
     .navegador .navegadores__nav {
         display: none;
     }
@@ -256,6 +272,16 @@ footer .ubicaciones {
     .newsletter_suscripcion .inputbutton {
         margin-bottom: 10px;
     }
+    footer .zocalo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img1 img1"
+        "img2 img3";
+        justify-items: center;  
+    }
+    footer .img1 {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -265,17 +291,40 @@ footer .ubicaciones {
     }
     footer h2,
     footer h3,
+    footer h4,
     .ubicaciones ul {
         width: 100%;
         margin-right: 0px;
+        margin-left: 0px;
     }
     footer .sector_ayudas {
         margin-bottom: 80px;
     }
     footer .zocalo {
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3";
     }
+    footer .zocalo .img2 {
+        margin-bottom: 30px;
+    }
+
     footer .zocalo img {
         margin-bottom: 20px;
     }
+
+    footer ul {
+        padding-left: 0px;
+    }
+
+    footer .ayudas {
+        margin-right: 15px;
+    }
+
 }
+
+
+
+    
