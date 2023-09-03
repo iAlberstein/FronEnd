@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Gotham-Book.otf";
+    src: url("../fonts/Gotham-Book.otf") format(truetype);
+}
+
+@font-face {
+    font-family: "Gotham-Bold.otf";
+    src: url("../fonts/Gotham-Bold.otf") format(truetype);
+}
+
+@font-face {
+    font-family: "Gotham-Medium.otf";
+    src: url("../fonts/Gotham-Medium.otf") format(truetype);
+}
+@font-face {
+    font-family: "Gotham-Light.otf";
+    src: url("../fonts/Gotham-Light.otf") format(truetype);
+}
+
+/* HEADER */
+
+header {
+    background-color: #044c8c;
+    display: grid;
+    grid-template-areas: 
+    "logo redes"
+    "logo navegador"
+    ;
+}
+
+.navegador #check__menu {
+    display: none;
+}
+header .navegador label {
+    display: none;
+}
+
+
+header .logo_teatro {
+    grid-area: logo;
+}
+
+header .logo_teatro img {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+header .redes_sociales {
+    grid-area: redes;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+}
+
+.redes_sociales .redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.redes_sociales .redes li {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.navegador {
+    grid-area: navegador;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;     
+}
+
+.navegador .navegadores__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       
+}
+
+.navegadores__nav li {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.navegadores__nav a {
+    color: antiquewhite;
+    font-family: "Gotham-Book.otf";
+}
+
+.navegadores a:hover {
+    font-family: "Gotham-Bold.otf"
+}
+
+
+
+
+/* Mediaqueries */
+
+@media (max-width: 650px) {
+    .navegador .navegadores__nav {
+        display: none;
+    }
+    header .navegador label {
+        display: block;
+        margin-right: 15px;
+    }
+    .navegador #check__menu:checked~.navegadores__nav {
+        background-color: #044d8c68;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .navegadores__nav li {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .redes_sociales .redes li {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .redes_sociales .redes {
+        width: 100%;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}
