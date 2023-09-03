@@ -3,6 +3,7 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    
 }
 
 @font-face {
@@ -165,8 +166,9 @@ footer .ayudas {
 
 
 
-footer li a {
+footer li .motivo {
     color: aliceblue;
+    text-decoration: none;
 }
 footer li {
     margin-bottom: 15px;
@@ -191,7 +193,9 @@ footer h3 {
 footer h4 {
     font-size: 13px;
     font-family: "Gotham-Book.otf";
-    color: aliceblue;
+    color: rgb(242, 255, 240);
+    text-decoration: none;
+    
 }
 
 footer .ubicaciones {
