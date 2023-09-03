@@ -99,6 +99,48 @@ header .redes_sociales {
     font-family: "Gotham-Bold.otf"
 }
 
+/* INDEX MAIN */
+
+.newsletter_suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter_suscripcion .texto {
+    font-family: "Gotham-Bold.otf";
+    padding-bottom: 15px;
+}
+
+.newsletter_suscripcion label {
+    font-family: "Gotham-Light.otf";
+}
+.newsletter_suscripcion .input #email {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.newsletter_suscripcion button {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+.ubicacion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ubicacion h2 {
+    padding-top: 50px;
+    font-family: "Gotham-Bold.otf";
+    padding-bottom: 15px;
+}
 
 /* FOOTER */
 
@@ -196,6 +238,16 @@ footer .ubicaciones {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .newsletter_suscripcion .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter_suscripcion .input label,
+    .newsletter_suscripcion .input input,
+    .newsletter_suscripcion .inputbutton {
+        margin-bottom: 10px;
     }
 }
 
