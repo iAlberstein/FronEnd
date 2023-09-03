@@ -100,6 +100,65 @@ header .redes_sociales {
 }
 
 
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #044c8c;
+}
+footer .zocalo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 90px;
+}
+
+footer .ayudas {
+    display: flex;
+    margin-left: 15px;
+}
+
+
+
+footer li a {
+    color: aliceblue;
+}
+footer li {
+    margin-bottom: 15px;
+}
+
+footer h2 {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Gotham-Bold.otf";
+    width: 200px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+footer h3 {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Gotham-Bold.otf";
+    width: 300px;
+}
+
+footer h4 {
+    font-size: 13px;
+    font-family: "Gotham-Book.otf";
+    color: aliceblue;
+}
+
+footer .ubicaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ubicacion_teatro {
+    margin-right: 40px;
+}
 
 
 /* Mediaqueries */
@@ -138,6 +197,26 @@ header .redes_sociales {
         flex-direction: row;
         justify-content: space-around;
     }
+}
 
-
+@media (max-width: 570px) {
+    footer .ayudas {
+        display: block;
+        text-align: center;
+    }
+    footer h2,
+    footer h3,
+    .ubicaciones ul {
+        width: 100%;
+        margin-right: 0px;
+    }
+    footer .sector_ayudas {
+        margin-bottom: 80px;
+    }
+    footer .zocalo {
+        flex-wrap: wrap;
+    }
+    footer .zocalo img {
+        margin-bottom: 20px;
+    }
 }
