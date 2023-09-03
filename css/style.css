@@ -103,6 +103,18 @@ header .redes_sociales {
 
 /* INDEX MAIN */
 
+main .carousel-caption {
+    background-color: rgba(213, 212, 212, 0.366);
+    border-radius: 5px;
+}
+
+main .carousel-caption h5 {
+    font-family: "Gotham-Bold.otf";
+}
+
+main .carousel-caption p {
+    font-family: "Gotham-Book.otf";
+}
 
 .newsletter_suscripcion {
     display: flex;
