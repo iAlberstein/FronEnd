@@ -326,6 +326,7 @@ main .carousel-caption p {
     grid-template-areas: 
     "datos mensaje";
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .formulario_contacto .n1 {
@@ -636,7 +637,7 @@ footer .ubicaciones {
         "datos" 
         "mensaje";
         justify-items: center;
-        margin-bottom: 60px;
+        
     }
     .formulario_contacto .n1 .contenedor{
         margin-right: 0px;
