@@ -192,6 +192,89 @@ main .carousel-caption p {
     padding-bottom: 15px;
 }
 
+/* CARTELERA */
+
+.cartelera_container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.buscador_container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador_container .elementos {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-template-areas: 
+    "ele1 ele1"
+    "ele2 ele3";
+    width: 400px;
+    align-items: center;
+}
+
+.buscador_container .elementos .ele1 {
+    grid-area: ele1;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+
+}
+
+.buscador_container .elementos .ele2 {
+    grid-area: ele2;
+    width: 95%;
+}
+
+.buscador_container .elementos .ele3 {
+    grid-area: ele3;
+}
+
+.buscador_container label {
+    font-family: "Gotham-Bold.otf";
+    font-size: 20px;
+
+}
+
+.buscador_container input {
+    height: 23px;
+    border-radius: 5px;
+}
+
+.buscador_container button {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.cartelera_container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartelera_container .card {
+    margin: 5px;
+}
+
+.btn {
+    background-color: #044c8c;
+    font-family: "Gotham-Light.otf";
+}
+
+.btn:hover {
+    background-color: #038161;
+    font-family: "Gotham-Medium.otf";
+}
+
+.cartelera_container .fotos {
+    padding-left: 0px;
+}
+
 /* FOOTER */
 
 footer {
@@ -379,7 +462,17 @@ footer .ubicaciones {
     footer .ayudas {
         margin-right: 15px;
     }
-
+    .buscador_container .elementos {
+        grid-template-columns: 1fr 30px;
+        grid-template-areas: 
+        "ele1 ele1"
+        "ele2 ele3";
+        width: 250px;
+        align-items: center;
+    }
+    .buscador_container .elementos .ele1 {
+        display: none;
+    }
 }
 
 
