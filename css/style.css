@@ -145,6 +145,41 @@ main .carousel-caption p {
     border-radius: 5px;
 }
 
+/* NSOTROS */
+
+.nosotros {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+}
+
+.nosotros h3 {
+    text-align: center;
+    font-family: "Gotham-Bold.otf";
+    font-size: 20px;
+    margin:  20px;
+}
+
+.nosotros h5{
+    text-align: justify;
+    font-family: "Gotham-Light.otf";
+    line-height: 1.5;
+    text-indent: 40px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.nosotros img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.territorio img {
+    margin-right: 15px;
+}
+.territorio_info {
+    display: flex
+}
 
 .ubicacion {
     text-align: center;
@@ -293,6 +328,10 @@ footer .ubicaciones {
     }
     footer .img1 {
         margin-bottom: 30px;
+    }
+
+    .nosotros {
+
     }
 }
 
