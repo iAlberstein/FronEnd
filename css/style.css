@@ -259,14 +259,15 @@ main .carousel-caption p {
 
 .cartelera_container .card {
     margin: 5px;
+    width: 18rem;
 }
 
-.btn {
+.btn-cartelera {
     background-color: #044c8c;
     font-family: "Gotham-Light.otf";
 }
 
-.btn:hover {
+.btn-cartelera:hover {
     background-color: #038161;
     font-family: "Gotham-Medium.otf";
 }
