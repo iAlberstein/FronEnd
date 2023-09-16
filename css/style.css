@@ -321,14 +321,39 @@ main .carousel-caption p {
 /* CONTACTO */
 
 
+
+
+.formulario_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+
+}
+
+.formulario_contacto .caja {
+    background-color: #9dc8ee;
+    margin: 20px;
+    border: solid;
+    border-color: #044c8c;
+    border-radius: 10px;
+
+}
+
 .formulario_contacto .formulario {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
     grid-template-areas: 
     "datos mensaje";
-    margin-top: 30px;
-    margin-bottom: 60px;
 }
+
+.formulario_contacto .elemento {
+    padding: 40px;
+}
+
 
 .formulario_contacto .n1 {
     grid-area: datos;
@@ -336,6 +361,10 @@ main .carousel-caption p {
 
 .formulario_contacto .n2 {
     grid-area: mensaje;
+}
+
+.formulario_contacto .n2 #comentario {
+    width: 350px;
 }
 
 .formulario_contacto .n1 .contenedor {
@@ -355,7 +384,9 @@ main .carousel-caption p {
 .formulario_contacto .n1 .contenedor .inputs {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    width: 350px;
+    height: 40px;
 }
 
 .formulario_contacto .encabezado {
@@ -363,19 +394,7 @@ main .carousel-caption p {
     margin-top: 20px;
 }
 
-.formulario_contacto #nombre::placeholder {
-    color: transparent;
-}
-
-.formulario_contacto #apellido::placeholder {
-    color: transparent;
-}
-
-.formulario_contacto #email::placeholder {
-    color: transparent;
-}
-
-.formulario_contacto #telefono::placeholder {
+.formulario_contacto .dato_personal::placeholder {
     color: transparent;
 }
 
@@ -387,28 +406,34 @@ main .carousel-caption p {
 .formulario_contacto label {
     font-family: "Gotham-Book.otf";
     font-size: 15px;
+    margin-bottom: 17px;
+    text-align: right;
 }
 
-.caja {
-    width: 100%;
-    height: 90%;
-}
-
-form {
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.formulario 
-
-button .envio {
-    width: 50px;
-    height: 20px;
-}
-
-.boton {
+.formulario_contacto .boton {
     margin-top: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: end;
+}
+
+.formulario_contacto button {
+    padding: 5px;
+    width: 90px;
+    border-radius: 5px;
+    font-family: "Gotham-Book.otf";
+    background-color: #044c8c;
+    border: none;
+    color: white;
+}
+
+.formulario_contacto button:hover {
+    background-color: #038161;
+    font-family: "Gotham-Medium.otf";
+}
+
+.formulario_contacto button:active{
+    background-color: #038161;
 }
 
 /* FOOTER */
@@ -493,6 +518,36 @@ footer .ubicaciones {
 
 /* Mediaqueries */
 
+
+@media (max-width: 1048px) {
+    .formulario_contacto .formulario {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "datos" 
+        "mensaje";
+        justify-items: center;
+        height: 100%;
+        
+    }
+    .formulario_contacto .n1 .contenedor{
+        margin-right: 0px;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .formulario_contacto .n1 .contenedor .datos_personales {
+        margin-right: 0px;
+    }
+    .formulario_contacto .datos_personales label {
+        display: none;
+    }
+
+    .formulario_contacto .dato_personal::placeholder {
+        color: gray;
+    }
+}
+
 @media (max-width: 680px) {
     .navegador .navegadores__nav {
         display: none;
@@ -548,31 +603,6 @@ footer .ubicaciones {
     footer .img1 {
         margin-bottom: 30px;
     }
-
-    .nosotros {
-
-    }
-
-    .formulario_contacto .datos_personales label {
-        display: none;
-    }
-
-    .formulario_contacto #nombre::placeholder {
-        color: gray;
-    }
-    
-    .formulario_contacto #apellido::placeholder {
-        color: gray;
-    }
-    
-    .formulario_contacto #email::placeholder {
-        color: gray;
-    }
-    
-    .formulario_contacto #telefono::placeholder {
-        color: gray;
-    }
-
 }
 
 @media (max-width: 570px) {
@@ -631,31 +661,6 @@ footer .ubicaciones {
         display: none;
     }
 
-    .formulario_contacto .formulario {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "datos" 
-        "mensaje";
-        justify-items: center;
-        
-    }
-    .formulario_contacto .n1 .contenedor{
-        margin-right: 0px;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-
-    .formulario_contacto .n1 .contenedor .datos_personales {
-        margin-right: 0px;
-    }
-    .formulario_contacto .n1 .inputs {
-        gap: 0px;
-    }
-    .formulario_contacto .boton {
-        display: flex;
-        justify-content: end;
-    }
 }
 
 
