@@ -146,15 +146,15 @@ main {
             background-color: $color-institucional;
             border: none;
             color: white;
-        }
 
-        button:hover {
-            background-color: #038161;
-            font-family: "Gotham-Medium.otf";
-        }
+            &:hover {
+                background-color: #038161;
+                font-family: "Gotham-Medium.otf";
+            }
 
-        button:active{
-            background-color: #038161;
+            &:active{
+                background-color: #038161;
+            }
         }
     }
 
@@ -266,15 +266,15 @@ main {
             background-color: $color-institucional;
             border: none;
             color: white;
-        }
 
-        button:hover {
-            background-color: #038161;
-            font-family: "Gotham-Medium.otf";
-        }
+            &:hover {
+                background-color: #038161;
+                font-family: "Gotham-Medium.otf";
+            }
 
-        button:active{
-            background-color: #038161;
+            &:active{
+                background-color: #038161;
+            }
         }
 
         .elementos {
@@ -473,15 +473,15 @@ main {
                 background-color: #044c8c;
                 border: none;
                 color: white;
-            }
 
-            button:hover {
-                background-color: #038161;
-                font-family: "Gotham-Medium.otf";
-            }
-            
-            button:active{
-                background-color: #038161;
+                &:hover {
+                    background-color: #038161;
+                    font-family: "Gotham-Medium.otf";
+                }
+
+                &:active{
+                    background-color: #038161;
+                }
             }
         }
     }    
