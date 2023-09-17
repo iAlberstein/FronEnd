@@ -1,14 +1,13 @@
 @import "./partials/fuentes";
-
-$color-institucional: #044c8c;
+@import "./partials/variables";
 
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    list-style: none;
-    
+    list-style: none;  
 }
+
 /* HEADER */
 
 header {
@@ -74,15 +73,15 @@ header {
 
             a {
                 color:aliceblue;
-                font-family: "Gotham-Book.otf";
+                font-family: $book;
                 text-decoration: none;
             }
             a:hover {
-                font-family: "Gotham-Bold.otf";
+                font-family: $bold;
             }
 
             .pagina_actual {
-                font-family: "Gotham-Bold.otf";
+                font-family: $bold;
                 border-bottom: solid 2px white;
             }
         }    
@@ -97,11 +96,11 @@ main {
         border-radius: 5px;
 
         h5 {
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
         }
 
         p {
-            font-family: "Gotham-Book.otf";
+            font-family: $book;
         }
     }
 
@@ -114,12 +113,12 @@ main {
         text-align: center;
 
         .texto {
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             padding-bottom: 15px;
         }
 
         label {
-            font-family: "Gotham-Light.otf";
+            font-family: $light;
         }
 
         .input {
@@ -142,14 +141,14 @@ main {
             height: 30px;
             width: 110px;
             border-radius: 5px;
-            font-family: "Gotham-Book.otf";
+            font-family: $book;
             background-color: $color-institucional;
             border: none;
             color: white;
 
             &:hover {
                 background-color: #038161;
-                font-family: "Gotham-Medium.otf";
+                font-family: $medium;
             }
 
             &:active{
@@ -164,7 +163,7 @@ main {
         align-items: center;
 
         h2 {
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             padding-bottom: 15px;
         }
 
@@ -185,14 +184,14 @@ main {
 
     h3 {
         text-align: center;
-        font-family: "Gotham-Bold.otf";
+        font-family: $bold;
         font-size: 20px;
         margin:  20px;
     }
 
     h5{
         text-align: justify;
-        font-family: "Gotham-Light.otf";
+        font-family: $light;
         line-height: 1.5;
         text-indent: 40px;
         font-size: 15px;
@@ -219,7 +218,7 @@ main {
 
         h2 {
             padding-top: 50px;
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             padding-bottom: 15px;
         }
 
@@ -242,7 +241,7 @@ main {
         justify-content: center;
 
         label {
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             font-size: 20px;
         }
 
@@ -262,14 +261,14 @@ main {
             height: 30px;
             width: 110px;
             border-radius: 5px;
-            font-family: "Gotham-Book.otf";
+            font-family: $book;
             background-color: $color-institucional;
             border: none;
             color: white;
 
             &:hover {
                 background-color: #038161;
-                font-family: "Gotham-Medium.otf";
+                font-family: $medium;
             }
 
             &:active{
@@ -322,12 +321,12 @@ main {
         
                 .btn-cartelera {
                     background-color: $color-institucional;
-                    font-family: "Gotham-Light.otf";
+                    font-family: $light;
                 }
         
                 .btn-cartelera:hover {
                     background-color: #038161;
-                    font-family: "Gotham-Medium.otf";
+                    font-family: $medium;
                 }
             }
         }
@@ -338,7 +337,7 @@ main {
 
 .galeria {
     .titulo_galeria {
-        font-family: "Gotham-Bold.otf";
+        font-family: $bold;
         font-size: 20px;
         text-align: center;
         margin-top: 20px;
@@ -384,7 +383,7 @@ main {
     margin-bottom: 60px;
 
     h1 {
-        font-family: "Gotham-Bold.otf";
+        font-family: $bold;
         font-size: 20px;
     }
 
@@ -425,7 +424,7 @@ main {
                 margin-right: 20px;
 
                 label {
-                    font-family: "Gotham-Book.otf";
+                    font-family: $book;
                     font-size: 15px;
                     margin-bottom: 17px;
                     text-align: right;
@@ -469,14 +468,14 @@ main {
                 padding: 5px;
                 width: 90px;
                 border-radius: 5px;
-                font-family: "Gotham-Book.otf";
+                font-family: $book;
                 background-color: #044c8c;
                 border: none;
                 color: white;
 
                 &:hover {
                     background-color: #038161;
-                    font-family: "Gotham-Medium.otf";
+                    font-family: $medium;
                 }
 
                 &:active{
@@ -524,7 +523,7 @@ footer {
         h2 {
             color: aliceblue;
             font-size: 20px;
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             width: 200px;
             margin-right: 80px;
             margin-bottom: 30px;
@@ -533,13 +532,13 @@ footer {
         h3 {
             color: aliceblue;
             font-size: 20px;
-            font-family: "Gotham-Bold.otf";
+            font-family: $bold;
             width: 300px;
         }
 
         h4 {
             font-size: 13px;
-            font-family: "Gotham-Book.otf";
+            font-family: $book;
             color: rgb(242, 255, 240);
             text-decoration: none;
             
