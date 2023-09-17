@@ -318,6 +318,10 @@ main {
             .card {
                 margin: 5px;
                 width: 18rem;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.02);
+                }
         
                 .btn-cartelera {
                     background-color: $color-institucional;

@@ -55,10 +55,12 @@
         .navegador {
             .navegadores__nav {
                 display: none;
-
+                
                 li {
                     margin-bottom: 15px;
                 }
+
+                
             }
 
             label {
@@ -67,17 +69,19 @@
             }
 
             #check__menu:checked~.navegadores__nav {
-                background-color: #044d8c68;
+                background-color: #044d8cc5;
                 width: 100%;
+                height: 220px;
                 position: absolute;
                 z-index:9999;
                 padding-top: 30px;
                 left: 0;
-                top: 90px;
+                top: 120px;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: flex-end;                
             }
+            
 
         }
     }
@@ -91,6 +95,16 @@
         input,
         .inputbutton {
             margin-bottom: 10px;
+        }
+    }
+
+    .cartelera_container {
+        .buscador_container {
+            .elementos {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     }
     
