@@ -1,5 +1,8 @@
 @import "./partials/fuentes";
 @import "./partials/variables";
+@import "./partials/mixin";
+@import "./partials/bucles";
+@import "./partials/condicional";
 
 * {
     margin: 0px;
@@ -123,8 +126,7 @@ main {
 
         .input {
             #email {
-                width: 300px;
-                height: 30px;
+                @include sizes(30px,300px);
                 border-radius: 10px;
             }
 
@@ -138,8 +140,7 @@ main {
         }
 
         button {
-            height: 30px;
-            width: 110px;
+            @include sizes(30px,110px);
             border-radius: 5px;
             font-family: $book;
             background-color: $color-institucional;
@@ -258,8 +259,7 @@ main {
         }
 
         button {
-            height: 30px;
-            width: 110px;
+            @include sizes(30px,110px);
             border-radius: 5px;
             font-family: $book;
             background-color: $color-institucional;
@@ -382,8 +382,7 @@ main {
         position: fixed;
         top: 0;
         left: 0px;
-        width: 100%;
-        height: 100%;
+        @include sizes(100%,100%);
         background-color: rgba(0, 0, 0, 0.821);
         z-index: 1;
         overflow: auto;
@@ -473,8 +472,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                width: 350px;
-                height: 40px;
+                @include sizes(40px,350px);
 
                 .dato_personal::placeholder {
                     color: transparent;
