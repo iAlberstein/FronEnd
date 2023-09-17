@@ -1,0 +1,178 @@
+@media (max-width: 1048px) {
+    .formulario_contacto {
+        .formulario {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "datos" 
+            "mensaje";
+            justify-items: center;
+            height: 100%;
+            
+        }
+
+        .elemento_n1 {
+            .contenedor {
+                margin-right: 0px;
+                justify-content: center;
+                margin-bottom: 70px;
+
+                .datos_personales {
+                    margin-right: 0px;
+    
+                    label {
+                        display: none;
+                    }
+                }
+    
+                .inputs {
+                    .dato_personal::placeholder {
+                        color: gray;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    header {
+        .redes_sociales {
+            .redes {
+                width: 100%;
+                margin-right: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                li {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .navegador {
+            .navegadores__nav {
+                display: none;
+
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+
+            label {
+                display: block;
+                margin-right: 15px;
+            }
+
+            #check__menu:checked~.navegadores__nav {
+                background-color: #044d8c68;
+                width: 100%;
+                position: absolute;
+                z-index:9999;
+                padding-top: 30px;
+                left: 0;
+                top: 90px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+        }
+    }
+  
+    .newsletter_suscripcion .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label,
+        input,
+        .inputbutton {
+            margin-bottom: 10px;
+        }
+    }
+    
+    footer {
+        .zocalo {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "img1 img1"
+            "img2 img3";
+            justify-items: center;  
+        }
+
+        .img1 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    
+    main .carousel-caption p {
+        display: none;
+    }
+    
+    
+    footer {
+        background-color: $color-institucional;
+
+        .zocalo {
+            display: flex;
+            flex-direction: column;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            height: 300px;
+            justify-content: space-around;
+
+            .img1 {
+                margin-bottom: 0px;
+            }
+
+            .img3 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .sector_ayudas {           
+            .ayudas {
+                flex-direction: column;
+                margin-left: 0px;
+                align-items: center;
+
+                h2 {
+                    width: 100%;
+                    margin-right: 0px;
+                }
+
+                h3 {
+                    width: 100%;
+                }
+
+                h4 {
+                    text-align: center;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 0px;
+                    
+                }
+            }
+
+            .ubicaciones {
+                flex-direction: column;
+                align-items: center;
+
+                .ubicacion_teatro {
+                    margin-right: 0px;
+                }
+            }
+
+        }
+    }
+}
