@@ -641,9 +641,11 @@ footer .ayudas .ubicaciones .ubicacion_teatro {
   footer .sector_ayudas .ayudas h2 {
     width: 100%;
     margin-right: 0px;
+    text-align: center;
   }
   footer .sector_ayudas .ayudas h3 {
     width: 100%;
+    text-align: center;
   }
   footer .sector_ayudas .ayudas h4 {
     text-align: center;
