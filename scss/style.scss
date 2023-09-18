@@ -530,6 +530,7 @@ main {
 
 footer {
     width: 100%;
+    position: relative;
 
     .zocalo {
         width: 100%;
@@ -602,6 +603,19 @@ footer {
             }
         }
     }
+
+    .sector_ayudas {
+        .go_top {
+            position: absolute;
+            right: -50px;
+            bottom: 15px;
+            
+            img {
+                width: 60%;
+            }
+        }
+    }
+        
 }
 
 

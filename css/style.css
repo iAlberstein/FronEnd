@@ -469,6 +469,7 @@ main .ubicacion .mapa {
 /* INICIO DE FOOTER */
 footer {
   width: 100%;
+  position: relative;
 }
 footer .zocalo {
   width: 100%;
@@ -527,6 +528,14 @@ footer .ayudas .ubicaciones {
 }
 footer .ayudas .ubicaciones .ubicacion_teatro {
   margin-right: 40px;
+}
+footer .sector_ayudas .go_top {
+  position: absolute;
+  right: -50px;
+  bottom: 15px;
+}
+footer .sector_ayudas .go_top img {
+  width: 60%;
 }
 
 /* QUERIES */
