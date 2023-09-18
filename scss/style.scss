@@ -24,7 +24,7 @@ header {
 
     .logo_teatro {
         grid-area: logo;
-        @include sizes (80px, 130px);
+        @include sizes (80px, 150px);
         margin-left: 20px;
         margin-bottom: 15px;
         margin-top: 20px;
