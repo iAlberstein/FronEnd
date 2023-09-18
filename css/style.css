@@ -15,6 +15,38 @@
   font-family: "Gotham-Light.otf";
   src: url("../fonts/Gotham-Light.otf") format(truetype);
 }
+.texto-1 {
+  font-size: 9px;
+}
+
+.texto-2 {
+  font-size: 18px;
+}
+
+.texto-3 {
+  font-size: 27px;
+}
+
+.texto-4 {
+  font-size: 36px;
+}
+
+.texto-5 {
+  font-size: 45px;
+}
+
+.color-institucional {
+  background-color: #044c8c;
+}
+
+.color-suavizado {
+  background-color: #9dc8ee;
+}
+
+.logo_teatro {
+  background-image: url(/images/logos/logoteatro.png);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -24,16 +56,15 @@
 
 /* HEADER */
 header {
-  background-color: #044c8c;
   display: grid;
   grid-template-areas: "logo redes" "logo navegador";
 }
 header .logo_teatro {
   grid-area: logo;
-}
-header .logo_teatro img {
+  width: 130px;
+  height: 80px;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   margin-top: 20px;
 }
 header .redes_sociales {
@@ -142,7 +173,6 @@ main .ubicacion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #9dc8ee;
 }
 main .ubicacion h2 {
   font-family: "Gotham-Bold.otf";
@@ -163,7 +193,6 @@ main .ubicacion .mapa {
 .nosotros h3 {
   text-align: center;
   font-family: "Gotham-Bold.otf";
-  font-size: 20px;
   margin: 20px;
 }
 .nosotros h5 {
@@ -171,7 +200,6 @@ main .ubicacion .mapa {
   font-family: "Gotham-Light.otf";
   line-height: 1.5;
   text-indent: 40px;
-  font-size: 15px;
   margin-bottom: 20px;
 }
 .nosotros .foto_frente_teatro img {
@@ -363,7 +391,6 @@ main .ubicacion .mapa {
   margin-top: 20px;
 }
 .formulario_contacto .caja {
-  background-color: #9dc8ee;
   margin: 20px;
   border: solid;
   border-color: #044c8c;
@@ -442,7 +469,6 @@ main .ubicacion .mapa {
 /* INICIO DE FOOTER */
 footer {
   width: 100%;
-  background-color: #044c8c;
 }
 footer .zocalo {
   width: 100%;

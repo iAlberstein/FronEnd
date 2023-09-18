@@ -1,0 +1,18 @@
+
+@import "./variables";
+
+@if ($logo_festivo=="navidad"){
+    .logo_teatro {
+        background-image: url(/images/logos/logoteatro_navidad.png);
+    }
+} @else if($logo_festivo=="pascuas"){
+    .logo_teatro {
+        background-image: url(/images/logos/logoteatro_pascuas.png);
+    }
+} @else {
+    .logo_teatro {
+        background-image: url(/images/logos/logoteatro.png);
+    }
+}
+
+

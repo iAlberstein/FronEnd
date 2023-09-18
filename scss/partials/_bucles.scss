@@ -1,2 +1,16 @@
+@for $i from 1 through 5 {
+    .texto-#{$i}{
+        font-size: 9px * $i;        
+    }
+}
 
+$colores: (
+  institucional: #044c8c,
+  suavizado: #9dc8ee,
+);
 
+@each $fondo_color, $color in $colores {
+  .color-#{$fondo_color} {
+    background-color: #{$color};
+  }
+}
