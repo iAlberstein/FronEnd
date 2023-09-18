@@ -162,10 +162,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #9dc8ee;
+
 
         h2 {
             font-family: $bold;
             padding-bottom: 15px;
+            padding-top: 20px;
         }
 
         .mapa {
