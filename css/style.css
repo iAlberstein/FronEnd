@@ -531,7 +531,7 @@ footer .ayudas .ubicaciones .ubicacion_teatro {
 }
 footer .sector_ayudas .go_top {
   position: absolute;
-  right: -50px;
+  right: 0px;
   bottom: 15px;
 }
 footer .sector_ayudas .go_top img {
