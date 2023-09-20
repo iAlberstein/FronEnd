@@ -1,0 +1,111 @@
+/* INICIO PÁGINA DE CONTACTO */
+
+.formulario_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    h1 {
+        font-family: $bold;
+        font-size: 20px;
+    }
+
+    .encabezado {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .caja {
+        margin: 20px;
+        border: solid;
+        border-color: #044c8c;
+        border-radius: 10px;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: 
+        "datos mensaje";
+    }
+
+    .elemento_n1 {
+        grid-area: datos;
+        padding: 40px;
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin-right: 50px;
+
+            .datos_personales {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-right: 20px;
+
+                label {
+                    font-family: $book;
+                    font-size: 15px;
+                    margin-bottom: 17px;
+                    text-align: right;
+                }
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                @include sizes(40px,350px);
+
+                .dato_personal::placeholder {
+                    color: transparent;
+                }
+
+                input:focus {
+                    border-color: #029d36;
+                }
+            }   
+        }
+    
+    }
+
+    .elemento_n2 {
+        grid-area: mensaje;
+        padding: 40px;
+
+        #comentario {
+            width: 350px;
+        }
+
+        .boton {
+            margin-top: 10px;
+            width: 350px;
+            display: flex;
+            justify-content: end;
+
+            button {
+                padding: 5px;
+                width: 90px;
+                border-radius: 5px;
+                font-family: $book;
+                background-color: #044c8c;
+                border: none;
+                color: white;
+
+                &:hover {
+                    background-color: #038161;
+                    font-family: $medium;
+                }
+
+                &:active{
+                    background-color: #038161;
+                }
+            }
+        }
+    }    
+}

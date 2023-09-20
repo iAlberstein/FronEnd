@@ -1,0 +1,78 @@
+/* HEADER */
+
+header {
+
+    display: grid;
+    grid-template-areas: 
+    "logo redes"
+    "logo navegador"
+    ;
+
+    .logo_teatro {
+        grid-area: logo;
+        @include sizes (80px, 150px);
+        margin-left: 20px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .redes_sociales {
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        .redes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            li {
+                margin-left: 15px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .navegador {
+
+        #check__menu {
+            display: none;
+        }
+
+        label {
+            display: none;
+        }
+
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        .navegadores__nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+            li {
+                margin-left: 15px;
+                margin-right: 20px;
+            }
+
+            a {
+                color:aliceblue;
+                font-family: $book;
+                text-decoration: none;
+            }
+            a:hover {
+                font-family: $bold;
+            }
+
+            .pagina_actual {
+                font-family: $bold;
+                border-bottom: solid 2px white;
+            }
+        }    
+    }
+}
+

@@ -1,0 +1,107 @@
+/* INICIO PÁGINA DE CARTELERA*/
+
+.cartelera_container {
+    width: 90%;
+    margin: 0px auto;
+
+    .buscador_container {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+        label {
+            font-family: $bold;
+            font-size: 20px;
+        }
+
+        input {
+            height: 23px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            @include sizes(30px,110px);
+            border-radius: 5px;
+            font-family: $book;
+            background-color: $color-institucional;
+            border: none;
+            color: white;
+
+            &:hover {
+                background-color: #038161;
+                font-family: $medium;
+            }
+
+            &:active{
+                background-color: #038161;
+            }
+        }
+
+        .elementos {
+            display: grid;
+            grid-template-columns: 1fr 30px;
+            grid-template-areas: 
+            "ele1 ele1"
+            "ele2 ele3";
+            width: 400px;
+            align-items: center;
+
+            .ele1 {
+                grid-area: ele1;
+                display: flex;
+                justify-content: start;
+                text-align: center;
+            }
+
+            .ele2 {
+                grid-area: ele2;
+                width: 95%;
+            }
+
+            .buscador_container .elementos .ele3 {
+                grid-area: ele3;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .cartelera {
+        .espectaculos {
+            padding-left: 0px;
+
+            .card {
+                margin: 5px;
+                width: 18rem;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.02);
+                }
+        
+                .btn-cartelera {
+                    background-color: $color-institucional;
+                    font-family: $light;
+                }
+        
+                .btn-cartelera:hover {
+                    background-color: #038161;
+                    font-family: $medium;
+                }
+            }
+        }
+    }
+}

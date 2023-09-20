@@ -204,11 +204,39 @@ main .ubicacion .mapa {
 }
 .nosotros .foto_frente_teatro img {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
-.nosotros .info_territorio img {
-  margin-right: 15px;
+.nosotros .info_territorio {
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "mapa_provincial texto1" "texto2 mapa_local";
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.nosotros .info_territorio .mapa_provincia {
+  grid-area: mapa_provincial;
+  width: 100%;
+}
+.nosotros .info_territorio .mapa_local {
+  grid-area: mapa_local;
+  width: 100%;
+}
+.nosotros .info_territorio .texto1 {
+  grid-area: texto1;
+  width: 100%;
+  height: 400px;
+  text-align: justify;
+  overflow-y: auto;
+  font-family: "Gotham-Light.otf";
+}
+.nosotros .info_territorio .texto2 {
+  grid-area: texto2;
+  width: 100%;
+  height: 400px;
+  text-align: justify;
+  overflow-y: auto;
+  font-family: "Gotham-Light.otf";
 }
 .nosotros .nuestra_sala {
   text-align: center;
@@ -469,12 +497,11 @@ main .ubicacion .mapa {
 /* INICIO DE FOOTER */
 footer {
   width: 100%;
-  position: relative;
 }
 footer .zocalo {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "img1 img2 img3";
   justify-content: space-around;
   align-items: center;
@@ -529,13 +556,18 @@ footer .ayudas .ubicaciones {
 footer .ayudas .ubicaciones .ubicacion_teatro {
   margin-right: 40px;
 }
-footer .sector_ayudas .go_top {
+footer .footer_gotop {
   position: absolute;
-  right: 0px;
-  bottom: 15px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: #044c8c;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
-footer .sector_ayudas .go_top img {
-  width: 60%;
+footer .footer_gotop img {
+  width: 80px;
+  height: 80px;
 }
 
 /* QUERIES */
@@ -560,6 +592,14 @@ footer .sector_ayudas .go_top img {
   }
   .formulario_contacto .elemento_n1 .contenedor .inputs .dato_personal::placeholder {
     color: gray;
+  }
+  .nosotros .info_territorio {
+    grid-template-columns: 1fr;
+    grid-template-areas: "texto1" "mapa_provincial" "texto2" "mapa_local";
+  }
+  .nosotros .info_territorio .texto1,
+  .nosotros .info_territorio .texto2 {
+    height: auto;
   }
 }
 @media (max-width: 680px) {
@@ -671,6 +711,9 @@ footer .sector_ayudas .go_top img {
   }
   footer .sector_ayudas .ubicaciones .ubicacion_teatro {
     margin-right: 0px;
+  }
+  footer .footer_gotop {
+    justify-content: center;
   }
 }
 

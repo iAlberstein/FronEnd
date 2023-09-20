@@ -1,3 +1,4 @@
+
 @media (max-width: 1048px) {
     .formulario_contacto {
         .formulario {
@@ -33,6 +34,25 @@
             }  
         }
     }
+
+
+
+    .nosotros {
+        .info_territorio {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "texto1"
+            "mapa_provincial" 
+            "texto2"
+            "mapa_local";
+            
+            .texto1,
+            .texto2 {
+                height: auto;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 680px) {
@@ -81,8 +101,6 @@
                 flex-direction: column;
                 align-items: flex-end;                
             }
-            
-
         }
     }
   
@@ -97,6 +115,7 @@
             margin-bottom: 10px;
         }
     }
+
 
     .cartelera_container {
         .buscador_container {
@@ -189,6 +208,10 @@
                 }
             }
 
+        }
+
+        .footer_gotop {
+            justify-content: center;
         }
     }
 }

@@ -1,0 +1,95 @@
+
+@import "./variables";
+@import "./mixin";
+/* INICIO DE FOOTER */
+
+footer {
+    width: 100%;
+    
+
+    .zocalo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "img1 img2 img3";
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 90px;
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+
+        .img3 {
+            grid-area: img3;
+        }
+    }
+
+    .ayudas {
+        display: flex;
+        margin-left: 15px;
+
+        h2 {
+            color: aliceblue;
+            font-size: 20px;
+            font-family: $bold;
+            width: 200px;
+            margin-right: 80px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: aliceblue;
+            font-size: 20px;
+            font-family: $bold;
+            width: 300px;
+        }
+
+        h4 {
+            font-size: 13px;
+            font-family: $book;
+            color: rgb(242, 255, 240);
+            text-decoration: none;
+            
+        }
+
+        li {
+            margin-bottom: 15px;
+
+            .motivo {
+                color: aliceblue;
+                text-decoration: none;
+            }
+        }
+
+        .ubicaciones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .ubicacion_teatro {
+                margin-right: 40px;
+            }
+        }
+    }   
+    
+    .footer_gotop {
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        background-color: $color-institucional;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        
+        img {
+            @include sizes(80px, 80px);
+        }
+    }
+}

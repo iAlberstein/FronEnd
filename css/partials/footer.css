@@ -1,0 +1,77 @@
+/* INICIO DE FOOTER */
+footer {
+  width: 100%;
+}
+footer .zocalo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "img1 img2 img3";
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 90px;
+}
+footer .zocalo .img1 {
+  grid-area: img1;
+}
+footer .zocalo .img2 {
+  grid-area: img2;
+}
+footer .zocalo .img3 {
+  grid-area: img3;
+}
+footer .ayudas {
+  display: flex;
+  margin-left: 15px;
+}
+footer .ayudas h2 {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Gotham-Bold.otf";
+  width: 200px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+footer .ayudas h3 {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Gotham-Bold.otf";
+  width: 300px;
+}
+footer .ayudas h4 {
+  font-size: 13px;
+  font-family: "Gotham-Book.otf";
+  color: rgb(242, 255, 240);
+  text-decoration: none;
+}
+footer .ayudas li {
+  margin-bottom: 15px;
+}
+footer .ayudas li .motivo {
+  color: aliceblue;
+  text-decoration: none;
+}
+footer .ayudas .ubicaciones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .ayudas .ubicaciones .ubicacion_teatro {
+  margin-right: 40px;
+}
+footer .footer_gotop {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: #044c8c;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+footer .footer_gotop img {
+  width: 80px;
+  height: 80px;
+}
+
+/*# sourceMappingURL=footer.css.map */

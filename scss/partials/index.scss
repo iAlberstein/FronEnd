@@ -1,0 +1,87 @@
+/* INICIO DEL INDEX-MAIN*/
+
+main {
+    .carousel-caption {
+        background-color: rgba(213, 212, 212, 0.366);
+        border-radius: 5px;
+
+        h5 {
+            font-family: $bold;
+        }
+
+        p {
+            font-family: $book;
+        }
+    }
+
+    .newsletter_suscripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        justify-content: center;
+        text-align: center;
+
+        .texto {
+            font-family: $bold;
+            padding-bottom: 15px;
+        }
+
+        label {
+            font-family: $light;
+        }
+
+        .input {
+            #email {
+                @include sizes(30px,300px);
+                border-radius: 10px;
+            }
+
+            input {
+                border: solid 1px;
+            }
+
+            input:focus {
+                border: solid 1.5px #029d36;
+            }
+        }
+
+        button {
+            @include sizes(30px,110px);
+            border-radius: 5px;
+            font-family: $book;
+            background-color: $color-institucional;
+            border: none;
+            color: white;
+
+            &:hover {
+                background-color: #038161;
+                font-family: $medium;
+            }
+
+            &:active{
+                background-color: #038161;
+            }
+        }
+    }
+
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        h2 {
+            font-family: $bold;
+            padding-bottom: 15px;
+            padding-top: 20px;
+        }
+
+        .mapa {
+            width: 80%;
+            margin-bottom: 100px;
+        }
+
+    }
+}

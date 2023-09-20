@@ -1,0 +1,89 @@
+/* INICIO PAGINA "NOSOTROS" */
+
+.nosotros {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+
+    h3 {
+        text-align: center;
+        font-family: $bold;
+
+        margin:  20px;
+    }
+
+    h5{
+        text-align: justify;
+        font-family: $light;
+        line-height: 1.5;
+        text-indent: 40px;
+        margin-bottom: 20px;
+    }
+
+    .foto_frente_teatro {
+        img {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+    }
+
+    .info_territorio {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mapa_provincial texto1"
+        "texto2 mapa_local";
+        gap: 20px;
+        margin-bottom: 100px;
+
+        
+        .mapa_provincia {
+            grid-area: mapa_provincial;
+            width: 100%;
+        }
+
+        .mapa_local {
+            grid-area: mapa_local;
+            width: 100%;
+
+        }
+
+        .texto1 {
+            grid-area: texto1;
+            width: 100%;
+            height: 400px;
+            text-align: justify;
+            overflow-y: auto;
+            font-family: $light;
+        }
+
+        .texto2 {
+            grid-area: texto2;
+            width: 100%;
+            height: 400px;
+            text-align: justify;
+            overflow-y: auto;
+            font-family: $light;
+
+        }
+
+
+
+    }
+
+    .nuestra_sala {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            padding-top: 50px;
+            font-family: $bold;
+            padding-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
