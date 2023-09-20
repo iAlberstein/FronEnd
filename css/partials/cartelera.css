@@ -1,17 +1,89 @@
-/* Error: Undefined variable.
- *    ,
- * 14 |             font-family: $bold;
- *    |                          ^^^^^
- *    '
- *   scss/partials/cartelera.scss 14:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 14 \2502              font-family: $bold;\a    \2502                           ^^^^^\a    \2575 \a   scss/partials/cartelera.scss 14:26  root stylesheet";
+@charset "UTF-8";
+/* INICIO PÁGINA DE CARTELERA*/
+.cartelera_container {
+  width: 90%;
+  margin: 0px auto;
 }
+.cartelera_container .buscador_container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cartelera_container .buscador_container label {
+  font-family: "Gotham-Bold.otf";
+  font-size: 20px;
+}
+.cartelera_container .buscador_container input {
+  height: 23px;
+  border-radius: 5px;
+}
+.cartelera_container .buscador_container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cartelera_container .buscador_container button {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Gotham-Book.otf";
+  background-color: #044c8c;
+  border: none;
+  color: white;
+}
+.cartelera_container .buscador_container button:hover {
+  background-color: #038161;
+  font-family: "Gotham-Medium.otf";
+}
+.cartelera_container .buscador_container button:active {
+  background-color: #038161;
+}
+.cartelera_container .buscador_container .elementos {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  grid-template-areas: "ele1 ele1" "ele2 ele3";
+  width: 400px;
+  align-items: center;
+}
+.cartelera_container .buscador_container .elementos .ele1 {
+  grid-area: ele1;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+}
+.cartelera_container .buscador_container .elementos .ele2 {
+  grid-area: ele2;
+  width: 95%;
+}
+.cartelera_container .buscador_container .elementos .buscador_container .elementos .ele3 {
+  grid-area: ele3;
+}
+.cartelera_container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cartelera_container .cartelera .espectaculos {
+  padding-left: 0px;
+}
+.cartelera_container .cartelera .espectaculos .card {
+  margin: 5px;
+  width: 18rem;
+  transition: 0.3s;
+}
+.cartelera_container .cartelera .espectaculos .card:hover {
+  transform: scale(1.02);
+}
+.cartelera_container .cartelera .espectaculos .card .btn-cartelera {
+  background-color: #044c8c;
+  font-family: "Gotham-Light.otf";
+}
+.cartelera_container .cartelera .espectaculos .card .btn-cartelera:hover {
+  background-color: #038161;
+  font-family: "Gotham-Medium.otf";
+}
+
+/*# sourceMappingURL=cartelera.css.map */

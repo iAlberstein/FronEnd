@@ -8,9 +8,10 @@ footer {
     
 
     .zocalo {
+        background-color: red;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3 1fr);
         grid-template-areas: 
         "img1 img2 img3";
         justify-content: space-around;
@@ -80,7 +81,6 @@ footer {
     }   
     
     .footer_gotop {
-        position: absolute;
         display: flex;
         justify-content: end;
         width: 100%;

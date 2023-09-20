@@ -1,17 +1,95 @@
-/* Error: Undefined variable.
- *    ,
- * 12 |         font-family: $bold;
- *    |                      ^^^^^
- *    '
- *   scss/partials/contacto.scss 12:22  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 12 \2502          font-family: $bold;\a    \2502                       ^^^^^\a    \2575 \a   scss/partials/contacto.scss 12:22  root stylesheet";
+@charset "UTF-8";
+/* INICIO PÁGINA DE CONTACTO */
+.formulario_contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
+.formulario_contacto h1 {
+  font-family: "Gotham-Bold.otf";
+  font-size: 20px;
+}
+.formulario_contacto .encabezado {
+  text-align: center;
+  margin-top: 20px;
+}
+.formulario_contacto .caja {
+  margin: 20px;
+  border: solid;
+  border-color: #044c8c;
+  border-radius: 10px;
+}
+.formulario_contacto .formulario {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas: "datos mensaje";
+}
+.formulario_contacto .elemento_n1 {
+  grid-area: datos;
+  padding: 40px;
+}
+.formulario_contacto .elemento_n1 .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 50px;
+}
+.formulario_contacto .elemento_n1 .contenedor .datos_personales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+.formulario_contacto .elemento_n1 .contenedor .datos_personales label {
+  font-family: "Gotham-Book.otf";
+  font-size: 15px;
+  margin-bottom: 17px;
+  text-align: right;
+}
+.formulario_contacto .elemento_n1 .contenedor .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  height: 40px;
+}
+.formulario_contacto .elemento_n1 .contenedor .inputs .dato_personal::placeholder {
+  color: transparent;
+}
+.formulario_contacto .elemento_n1 .contenedor .inputs input:focus {
+  border-color: #029d36;
+}
+.formulario_contacto .elemento_n2 {
+  grid-area: mensaje;
+  padding: 40px;
+}
+.formulario_contacto .elemento_n2 #comentario {
+  width: 350px;
+}
+.formulario_contacto .elemento_n2 .boton {
+  margin-top: 10px;
+  width: 350px;
+  display: flex;
+  justify-content: end;
+}
+.formulario_contacto .elemento_n2 .boton button {
+  padding: 5px;
+  width: 90px;
+  border-radius: 5px;
+  font-family: "Gotham-Book.otf";
+  background-color: #044c8c;
+  border: none;
+  color: white;
+}
+.formulario_contacto .elemento_n2 .boton button:hover {
+  background-color: #038161;
+  font-family: "Gotham-Medium.otf";
+}
+.formulario_contacto .elemento_n2 .boton button:active {
+  background-color: #038161;
+}
+
+/*# sourceMappingURL=contacto.css.map */

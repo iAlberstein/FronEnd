@@ -1,17 +1,63 @@
-/* Error: Undefined mixin.
- *    ,
- * 13 |         @include sizes (80px, 150px);
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/partials/header.scss 13:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502          @include sizes (80px, 150px);\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/partials/header.scss 13:9  root stylesheet";
+/* HEADER */
+header {
+  display: grid;
+  grid-template-areas: "logo redes" "logo navegador";
 }
+header .logo_teatro {
+  grid-area: logo;
+  width: 150px;
+  height: 80px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+header .redes_sociales {
+  grid-area: redes;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .redes_sociales .redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+header .redes_sociales .redes li {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+header .navegador {
+  grid-area: navegador;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .navegador #check__menu {
+  display: none;
+}
+header .navegador label {
+  display: none;
+}
+header .navegador .navegadores__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+header .navegador .navegadores__nav li {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+header .navegador .navegadores__nav a {
+  color: aliceblue;
+  font-family: "Gotham-Book.otf";
+  text-decoration: none;
+}
+header .navegador .navegadores__nav a:hover {
+  font-family: "Gotham-Bold.otf";
+}
+header .navegador .navegadores__nav .pagina_actual {
+  font-family: "Gotham-Bold.otf";
+  border-bottom: solid 2px white;
+}
+
+/*# sourceMappingURL=header.css.map */

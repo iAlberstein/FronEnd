@@ -1,17 +1,69 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |             font-family: $bold;
- *   |                          ^^^^^
- *   '
- *   scss/partials/index.scss 9:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502              font-family: $bold;\a   \2502                           ^^^^^\a   \2575 \a   scss/partials/index.scss 9:26  root stylesheet";
+/* INICIO DEL INDEX-MAIN*/
+main .carousel-caption {
+  background-color: rgba(213, 212, 212, 0.366);
+  border-radius: 5px;
 }
+main .carousel-caption h5 {
+  font-family: "Gotham-Bold.otf";
+}
+main .carousel-caption p {
+  font-family: "Gotham-Book.otf";
+}
+main .newsletter_suscripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  justify-content: center;
+  text-align: center;
+}
+main .newsletter_suscripcion .texto {
+  font-family: "Gotham-Bold.otf";
+  padding-bottom: 15px;
+}
+main .newsletter_suscripcion label {
+  font-family: "Gotham-Light.otf";
+}
+main .newsletter_suscripcion .input #email {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+}
+main .newsletter_suscripcion .input input {
+  border: solid 1px;
+}
+main .newsletter_suscripcion .input input:focus {
+  border: solid 1.5px #029d36;
+}
+main .newsletter_suscripcion button {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Gotham-Book.otf";
+  background-color: #044c8c;
+  border: none;
+  color: white;
+}
+main .newsletter_suscripcion button:hover {
+  background-color: #038161;
+  font-family: "Gotham-Medium.otf";
+}
+main .newsletter_suscripcion button:active {
+  background-color: #038161;
+}
+main .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .ubicacion h2 {
+  font-family: "Gotham-Bold.otf";
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+main .ubicacion .mapa {
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */
