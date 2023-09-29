@@ -139,6 +139,45 @@
         .img1 {
             margin-bottom: 30px;
         }
+
+        .sector_ayudas {
+            .ayudas_container {
+                flex-direction: column;
+                text-align: center;
+                margin-right: 0px;
+                width: 100%;
+    
+                .ayuda_titulo {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 40px;
+    
+                    h2 {
+                        text-align: center;
+                    }
+                }
+                
+                .ayudas_motivos {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .ubicaciones_container {
+                flex-direction: column;
+                text-align: center;
+                padding-right: 0px;
+
+                .ayuda_titulo {
+                    width: 100%;
+                    margin-right: 0px;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        
+
     }
 }
 

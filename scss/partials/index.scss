@@ -37,6 +37,7 @@ main {
             #email {
                 @include sizes(30px,300px);
                 border-radius: 10px;
+                padding-left: 15px;
             }
 
             input {
@@ -46,6 +47,7 @@ main {
             input:focus {
                 border: solid 1.5px #029d36;
             }
+
         }
 
         button {

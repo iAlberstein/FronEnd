@@ -56,6 +56,9 @@
   width: 350px;
   height: 40px;
 }
+.formulario_contacto .elemento_n1 .contenedor .inputs .dato_personal {
+  padding-left: 15px;
+}
 .formulario_contacto .elemento_n1 .contenedor .inputs .dato_personal::placeholder {
   color: transparent;
 }
@@ -68,6 +71,8 @@
 }
 .formulario_contacto .elemento_n2 #comentario {
   width: 350px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .formulario_contacto .elemento_n2 .boton {
   margin-top: 10px;

@@ -63,25 +63,34 @@
                 flex-direction: column;
                 gap: 10px;
                 @include sizes(40px,350px);
+                
+                .dato_personal {
+                    padding-left: 15px;
 
-                .dato_personal::placeholder {
-                    color: transparent;
+                    &::placeholder {
+                        color: transparent; 
+                    }
+                }
+                
+
+                input{
+                    &:focus {
+                        border-color: #029d36;
+                    }
                 }
 
-                input:focus {
-                    border-color: #029d36;
                 }
             }   
         }
     
-    }
-
-    .elemento_n2 {
+       .elemento_n2 {
         grid-area: mensaje;
         padding: 40px;
 
         #comentario {
             width: 350px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .boton {

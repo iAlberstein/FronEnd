@@ -21,44 +21,61 @@ footer .zocalo .img2 {
 footer .zocalo .img3 {
   grid-area: img3;
 }
-footer .ayudas {
+footer .sector_ayudas {
+  background-color: #044c8c;
   display: flex;
-  margin-left: 15px;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: center;
 }
-footer .ayudas h2 {
-  color: aliceblue;
-  font-size: 20px;
-  font-family: "Gotham-Bold.otf";
-  width: 200px;
-  margin-right: 80px;
-  margin-bottom: 30px;
+footer .sector_ayudas .ayudas_container {
+  display: flex;
+  margin-right: 40px;
 }
-footer .ayudas h3 {
-  color: aliceblue;
-  font-size: 20px;
+footer .sector_ayudas .ayudas_container .ayuda_titulo {
+  width: 300px;
+  margin-right: 40px;
+  text-align: right;
   font-family: "Gotham-Bold.otf";
+  color: aliceblue;
+}
+footer .sector_ayudas .ayudas_container .ayudas_motivos {
+  margin-right: 40px;
   width: 300px;
 }
-footer .ayudas h4 {
-  font-size: 13px;
+footer .sector_ayudas .ayudas_container .ayudas_motivos a {
+  text-decoration: none;
   font-family: "Gotham-Book.otf";
-  color: rgb(242, 255, 240);
-  text-decoration: none;
-}
-footer .ayudas li {
-  margin-bottom: 15px;
-}
-footer .ayudas li .motivo {
   color: aliceblue;
-  text-decoration: none;
 }
-footer .ayudas .ubicaciones {
+footer .sector_ayudas .ayudas_container .ayudas_motivos h4 {
+  margin-bottom: 35px;
+}
+footer .sector_ayudas .ubicaciones_container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding-right: 40px;
 }
-footer .ayudas .ubicaciones .ubicacion_teatro {
+footer .sector_ayudas .ubicaciones_container .ayuda_titulo {
+  width: 300px;
   margin-right: 40px;
+  text-align: right;
+  font-family: "Gotham-Bold.otf";
+  color: aliceblue;
+}
+footer .sector_ayudas .ubicaciones_container .ubicaciones .ubicacion_titulo {
+  font-family: "Gotham-Bold.otf";
+  color: aliceblue;
+}
+footer .sector_ayudas .ubicaciones_container .ubicaciones .contenido {
+  font-family: "Gotham-Book.otf";
+  color: aliceblue;
+}
+footer .sector_ayudas .ubicaciones_container .ubicaciones .ubicacion_teatro {
+  width: 350px;
+  margin-bottom: 35px;
+}
+footer .sector_ayudas .ubicaciones_container .ubicaciones .ubicacion_secretaria {
+  width: 350px;
 }
 footer .footer_gotop {
   display: flex;
