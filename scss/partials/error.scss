@@ -1,0 +1,43 @@
+@import "./variables";
+@import "./mixin";
+
+/* INICIO PÁGINA DE ERROR*/
+
+.error_container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    h1 {
+        font-family: $bold;
+        text-align: center;
+    }
+
+    button {
+        padding: 5px;
+        width: 200px;
+        border-radius: 5px;
+        font-family: $book;
+        background-color: #044c8c;
+        border: none;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-family: $book;
+        }
+
+        &:hover {
+            background-color: #038161;
+            font-family: $medium;
+        }
+
+        &:active{
+            background-color: #038161;
+        }
+    }
+}
